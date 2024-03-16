@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI VIRTUAL ASSISTANT</title>
+  <style src="style1.css"></style>
+</head>
+<body>
+  <div id="chat-window">
+    <div id="chat-history"></div>
+    <form id="query_form">
+        <div id="chat-input">
+        <select id="persona-dropdown">
+            <option value="Friendly Talks">Friendly Talks</option>
+            <option value="Geek Time">Geek Time</option>
+            <option value="Innovative Ideas">Innovative Ideas</option>
+            <option value="Teacher">Teacher</option>
+            <option value="LegalAdvisor">LegalAdvisor</option>
+            
+
+        </select>
+        <input type="text" id="query-input" autocomplete="off">
+        <button type="submit" id="send-button">Send</button>
+    </form>
+    </div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
